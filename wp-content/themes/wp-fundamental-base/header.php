@@ -8,7 +8,5 @@
         <meta name="viewport" content="width=device-width">
         <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
         <?php wp_head(); ?>
-</head>
-<header>
-    	
-</header>
+    </head>
+    <header><?php wp_nav_menu( array( 'theme_location'=>'primary', 'container_class'=>'menu' ) ); ?></header>
